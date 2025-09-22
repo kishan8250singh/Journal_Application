@@ -23,12 +23,12 @@ public class JournalEntryController {
   }
 
   @GetMapping("id/{myid}")
-    public JournalEntry getjournalntry(@PathVariable Long myid){
+    public JournalEntry GetJournalEntry(@PathVariable Long myid){
       return journalEntryMap.get(myid);
   }
 
   @DeleteMapping("id/{myid}")
-    public JournalEntry deletejournalEntrybyid(@PathVariable Long myid){
+    public JournalEntry DeleteJournalEntryById(@PathVariable Long myid){
       return journalEntryMap.remove(myid);
   }
   @PutMapping("id/{myid}")
